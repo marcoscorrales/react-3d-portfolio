@@ -48,7 +48,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Multilingual Development",
       icon: backend,
     },
     {
