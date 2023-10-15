@@ -27,13 +27,13 @@ const Contact = () => {
     setLoading(true)
 
     emailjs.send(
-      env,
+      'service_r583xrk',
       'template_huebl0p',
       {
         from_name: form.name,
         to_name: 'Marcos',
         from_email: form.email,
-        to_email: 'marcosdecoa@gmail.com',
+        to_email: 'contact@marcoscorralesdev.com',
         message: form.message,
       },
       'MT8egtC5h3RQno5ZL'
