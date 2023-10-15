@@ -8,45 +8,43 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    vue,
     tailwind,
-    nodejs,
+    bootstrap,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    php,
+    laravel,
+    cysval,
+    viajesreina,
+    safecapital,
+    festivalmusica,
+    blogweb,
+    sql,
   } from "../assets";
   
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "Acerca de mí",
     },
     {
       id: "work",
-      title: "Work",
+      title: "Experiencia",
     },
     {
       id: "contact",
-      title: "Contact",
+      title: "Contacto",
     },
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Front end Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Responsive Design",
       icon: mobile,
     },
     {
@@ -54,12 +52,20 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Project Creator",
       icon: creator,
     },
   ];
   
   const technologies = [
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Vue",
+      icon: vue,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -77,133 +83,70 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Bootstrap",
+      icon: bootstrap,
     },
     {
       name: "MongoDB",
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "php",
+      icon: php,
+    },
+    {
+      name: "laravel",
+      icon: laravel,
     },
     {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Desarrollador de front-end",
+      company_name: "Viajes Reina SL",
+      icon: viajesreina,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Septiembre 2023 - Actualidad",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Creación de componentes reutilizables: Desarrollé componentes Vue.js reutilizables para acelerar el desarrollo y mantener la coherencia en la interfaz.",
+        "Mejora de la experiencia de compra y la adaptación a dispositivos móviles: Identifiqué y solucioné errores en el proceso de compra, garantizando una experiencia sin problemas para los usuarios. Además, trabajé en la optimización de la interfaz de usuario para dispositivos móviles, asegurando que la aplicación web sea funcional y atractiva en pantallas de diferentes tamaños.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Desarrollador de front-end",
+      company_name: "CYSVAL SL",
+      icon: cysval,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Abril 2022 - Septiembre 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mantenimiento y actualización de contenido: Realicé el mantenimiento y la actualización de sitios web existentes, garantizando que el contenido estuviera actualizado y alineado con los objetivos del negocio",
+        "Traducción a inglés de la web: Encargado de la implementación de la traducción al inglés de la interfaz de usuario de la aplicación web, lo que permitió expandir el alcance a un público internacional y mejorar la usabilidad para usuarios de habla inglesa.",
+        "Implementación de funcionalidades en gestor de productos: Colaboré en la implementación de mejoras  y funcionalidades en el gestor de productos, mejorando la eficiencia y la experiencia del usuario.",
+        "Mantenimiento y actualización de endpoints API: Participé en el mantenimiento regular de los endpoints de la API, asegurando que la aplicación Vue.js pudiera acceder a datos actualizados y funcionar sin problemas.",
       ],
     },
   ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
+    
   const projects = [
     {
-      name: "Car Rent",
+      name: "Safe Capital",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Este proyecto es un portal web que ofrece información detallada sobre fondos de inversión, los usuarios pueden explorar datos de rendimiento histórico, comparar fondos y utilizar herramientas de filtrado.",
       tags: [
         {
-          name: "react",
+          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
@@ -215,20 +158,20 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: safecapital,
+      source_code_link: "https://github.com/marcoscorrales/safecapital-nextjs",
     },
     {
-      name: "Job IT",
+      name: "Festival Música",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Este proyecto es un sitio web que presenta los horarios y detalles de un festival de música, permitiendo a los asistentes acceder fácilmente a la información esencial para su experiencia en el evento.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "gulp",
           color: "green-text-gradient",
         },
         {
@@ -236,30 +179,30 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: festivalmusica,
+      source_code_link: "https://github.com/marcoscorrales/festivalMusica",
     },
     {
-      name: "Trip Guide",
+      name: "Blog web",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Este proyecto es un blog de desarrollo web que ofrece una variedad de artículos para entusiastas del desarrollo. Los visitantes pueden explorar contenido sobre tendencias para mejorar en la programación web.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "graphql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: blogweb,
+      source_code_link: "https://github.com/marcoscorrales/main-blog-nextjs",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
