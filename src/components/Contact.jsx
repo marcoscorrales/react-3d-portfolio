@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from "../hoc"
 import { slideIn } from '../utils/motion'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Contact = () => {
   const formRef = useRef();
@@ -60,6 +61,17 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
+        <section className="flex items-center gap-5 mb-5">
+        <a href="https://github.com/marcoscorrales" target="_blank" rel="noopener noreferrer">
+          <BsGithub size={30}/>
+        </a>
+
+        <a href="https://www.linkedin.com/in/marcos-corrales-castro" target="_blank" rel="noopener noreferrer">
+          <BsLinkedin size={30}/>
+        </a>
+          
+          
+        </section>
         <p className={styles.sectionSubText}>Ponerse en contacto</p>
         <h3 className={styles.sectionHeadText}>Contacto.</h3>
 
