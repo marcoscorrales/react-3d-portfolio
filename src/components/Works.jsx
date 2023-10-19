@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({
   index,
@@ -63,11 +64,12 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Mi trabajo</p>
-        <h2 className={styles.sectionHeadText}>Proyectos.</h2>
+        <p className={styles.sectionSubText}>{t("work.projects.subtitle")}</p>
+        <h2 className={styles.sectionHeadText}>{t("work.projects.title")}</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -75,7 +77,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          En mi portafolio, encontrarás una selección de proyectos que representan mi habilidad para convertir conceptos en soluciones tangibles. Cada proyecto se presenta con enlaces a repositorios de código y demostraciones en vivo, ofreciendo una visión detallada de mi trabajo en acción.
+          {t("work.projects.description")}
         </motion.p>
       </div>
 

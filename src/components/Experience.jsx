@@ -10,6 +10,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useTranslation } from "react-i18next";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -46,11 +47,12 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Lo que he hecho hasta ahora</p>
-        <h2 className={styles.sectionHeadText}>Experiencia laboral.</h2>
+        <p className={styles.sectionSubText}>{t("work.subtitle")}</p>
+        <h2 className={styles.sectionHeadText}>{t("work.title")}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

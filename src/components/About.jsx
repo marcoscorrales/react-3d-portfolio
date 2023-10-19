@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import { useTranslation } from 'react-i18next';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -29,15 +30,16 @@ const ServiceCard = ({ index, title, icon }) => {
 }
 
 const About = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introducción</p>
-        <h2 className={styles.sectionHeadText}>Acerca de mí.</h2>
+        <p className={styles.sectionSubText}>{t("about.subtitle")}</p>
+        <h2 className={styles.sectionHeadText}>{t("about.title")}</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-      A lo largo de mi carrera, he trabajado en empresas para crear soluciones de software efectivas. Mi experiencia en TypeScript, JavaScript, React y Vue.js ha sido una parte fundamental de mi éxito. Este portafolio presenta una visión completa de mi trabajo profesional y mis proyectos personales, demostrando mi habilidad para encontrar nuevas oportunidades laborales.
+        {t("about.description")}
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

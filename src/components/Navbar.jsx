@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const [t, i18n] = useTranslation('global');
+  const activeLang = i18n.language;
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -22,7 +25,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain bg-transparent" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-9 h-9 object-contain bg-transparent"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Marcos &nbsp;
             <span className="sm:block hidden">| Corrales Castro</span>
@@ -40,6 +47,22 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            className={`${
+              activeLang === "es" ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => i18n.changeLanguage("es")}
+          >
+            ES
+          </li>
+          <li
+            className={`${
+              activeLang === "en"? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => i18n.changeLanguage("en")}
+          >
+            EN
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

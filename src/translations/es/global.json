@@ -1,0 +1,120 @@
+{
+	"header": {
+		"about": "Acerca de mí",
+		"work": "Experiencia",
+		"contact": "Contacto"
+	},
+	"hero": {
+		"title": "Hola, soy ",
+		"subtitle1": "Desarrollador Frontend apasionado por Vue.js y React",
+		"subtitle2": " Vue.js y React"
+	},
+	"about": {
+		"subtitle": "INTRODUCCIÓN",
+		"title": "Acerca de mí",
+		"description" : "A lo largo de mi carrera, he trabajado en empresas para crear soluciones de software efectivas. Mi experiencia en TypeScript, JavaScript, React y Vue.js ha sido una parte fundamental de mi éxito. Este portafolio presenta una visión completa de mi trabajo profesional y mis proyectos personales, demostrando mi habilidad para encontrar nuevas oportunidades laborales."
+	},
+	"work": {
+		"subtitle": "LO QUE HE HECHO HASTA AHORA",
+		"title": "Experiencia laboral",
+		"works": {
+			"viajesreina": {
+				"title": "Desarrollador de front-end",
+				"subtitle": "Viajes Reina SL",
+				"responsibilities": {
+					"01": "Creación de componentes reutilizables: Desarrollé componentes Vue.js reutilizables para acelerar el desarrollo y mantener la coherencia en la interfaz.",
+					"02": "Mejora de la experiencia de compra y la adaptación a dispositivos móviles: Identifiqué y solucioné errores en el proceso de compra, garantizando una experiencia sin problemas para los usuarios. Además, trabajé en la optimización de la interfaz de usuario para dispositivos móviles, asegurando que la aplicación web sea funcional y atractiva en pantallas de diferentes tamaños."
+				},
+				"date": "Septiembre 2023 - Actualidad"
+			},
+			"cysval": {
+				"title": "Desarrollador de front-end",
+				"subtitle": "CYSVAL SL",
+				"responsibilities": {
+					"01": "Mantenimiento y actualización de contenido: Realicé el mantenimiento y la actualización de sitios web existentes, garantizando que el contenido estuviera actualizado y alineado con los objetivos del negocio.",
+					"02": "Traducción a inglés de la web: Encargado de la implementación de la traducción al inglés de la interfaz de usuario de la aplicación web, lo que permitió expandir el alcance a un público internacional y mejorar la usabilidad para usuarios de habla inglesa.",
+					"03": "Implementación de funcionalidades en gestor de productos: Colaboré en la implementación de mejoras y funcionalidades en el gestor de productos, mejorando la eficiencia y la experiencia del usuario.",
+					"04": "Mantenimiento y actualización de endpoints API: Participé en el mantenimiento regular de los endpoints de la API, asegurando que la aplicación Vue.js pudiera acceder a datos actualizados y funcionar sin problemas."
+				},
+				"date": "Abril 2022 - Septiembre 2023"
+			}
+		},
+        "projects": {
+            "subtitle": "MI TRABAJO",
+            "title": "Proyectos",
+            "description": "En mi portafolio, encontrarás una selección de proyectos que representan mi habilidad para convertir conceptos en soluciones tangibles. Cada proyecto se presenta con enlaces a repositorios de código y demostraciones en vivo, ofreciendo una visión detallada de mi trabajo en acción.",
+            "projects": {
+                "01": {
+                    "title": "Safe Capital",
+                    "description": "Este proyecto es un portal web que ofrece información detallada sobre fondos de inversión, los usuarios pueden explorar datos de rendimiento histórico, comparar fondos y utilizar herramientas de filtrado.",
+                    "technologies": {
+                        "01": "nextjs",
+                        "02": "mongodb",
+                        "03": "tailwind"
+                    },
+                    "links": {
+                        "01": {
+                            "title": "Repositorio",
+                            "url": "https://github.com/marcoscorrales/safecapital-nextjs"
+                        }
+                    }
+                },
+                "02": {
+                    "title": "Festival Música",
+                    "description": "Este proyecto es un sitio web que presenta los horarios y detalles de un festival de música, permitiendo a los asistentes acceder fácilmente a la información esencial para su experiencia en el evento.",
+                    "technologies": {
+                        "01": "html",
+                        "02": "gulp",
+                        "03": "scss"
+                    },
+                    "links": {
+                        "01": {
+                            "title": "Repositorio",
+                            "url": "https://github.com/marcoscorrales/festivalMusica"
+                        }
+                    }
+                },
+                "03": {
+                    "title": "Blog web",
+                    "description": "Este proyecto es un blog de desarrollo web que ofrece una variedad de artículos para entusiastas del desarrollo. Los visitantes pueden explorar contenido sobre tendencias para mejorar en la programación web.",
+                    "technologies": {
+                        "01": "nextjs",
+                        "02": "graphql",
+                        "03": "tailwind"
+                    },
+                    "links": {
+                        "01": {
+                            "title": "Repositorio",
+                            "url": "https://github.com/marcoscorrales/main-blog-nextjs"
+                        }
+                    }
+                }
+            }
+        },
+        
+        "contact": {
+            "subtitle": "PONERSE EN CONTACTO",
+            "title": "Contacto",
+            "form": {
+                "name": {
+                    "title": "Tu nombre",
+                    "placeholder": "Tu nombre"
+                },
+                "email": {
+                    "title": "Tu email",
+                    "placeholder": "Tu email"
+                },
+                "message": {
+                    "title": "Tu mensaje",
+                    "placeholder": "¿Qué quieres decir?"
+                },
+                "submit": {
+                    "title": "Enviar",
+                    "sending": "Enviando..."
+                }
+            },
+            "success": "¡Gracias por tu mensaje! Me comunicaré contigo lo antes posible.",
+            "error": "Algo salió mal."
+        }
+	}
+}
