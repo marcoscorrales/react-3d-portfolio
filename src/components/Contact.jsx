@@ -10,7 +10,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { useTranslation } from "react-i18next"
 
 const Contact = () => {
-  const [t, i18n] = useTranslation('global');
+  const [t] = useTranslation('global');
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -74,8 +74,8 @@ const Contact = () => {
           
           
         </section>
-        <p className={styles.sectionSubText}>{t("work.contact.subtitle")}</p>
-        <h3 className={styles.sectionHeadText}>{t("work.contact.title")}</h3>
+        <p className={styles.sectionSubText}>{t("contact.subtitle")}</p>
+        <h3 className={styles.sectionHeadText}>{t("contact.title")}</h3>
 
         <form
           ref={formRef}
@@ -84,40 +84,40 @@ const Contact = () => {
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-            {t("work.contact.form.name.title")}
+            {t("contact.form.name.title")}
             </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder={t("work.contact.form.name.placeholder")}
+              placeholder={t("contact.form.name.placeholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {t("work.contact.form.email.title")}
+              {t("contact.form.email.title")}
             </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder={t("work.contact.form.email.placeholder")}
+              placeholder={t("contact.form.email.placeholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {t("work.contact.form.message.title")}
+              {t("contact.form.message.title")}
             </span>
             <textarea
               rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder={t("work.contact.form.message.placeholder")}
+              placeholder={t("contact.form.message.placeholder")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border font-medium"
             />
           </label>
@@ -125,7 +125,7 @@ const Contact = () => {
           <button type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? 'Enviando...' : 'Enviar'}
+            {loading ? t("contact.form.submit.sending") : t("contact.form.submit.title")}
           </button>
         </form>
       </motion.div>

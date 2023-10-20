@@ -1,119 +1,127 @@
 {
-    "header": {
-        "about": "About Me",
-        "work": "Experience",
-        "contact": "Contact"
-    },
-    "hero": {
-        "title": "Hi, I'm ",
-        "subtitle1": "Passionate Frontend Developer with Vue.js and React",
-        "subtitle2": "Vue.js and React"
-    },
+  "header": {
     "about": {
-        "subtitle": "INTRODUCTION",
-        "title": "About Me",
-        "description": "Throughout my career, I've worked at companies to create effective software solutions. My experience with TypeScript, JavaScript, React, and Vue.js has been a key part of my success. This portfolio provides a comprehensive view of my professional work and personal projects, demonstrating my ability to find new job opportunities."
+        "id": "about",
+        "title": "About Me"
     },
     "work": {
-        "subtitle": "WHAT I'VE DONE SO FAR",
-        "title": "Work Experience",
-        "works": {
-            "viajesreina": {
-                "title": "Front-end Developer",
-                "subtitle": "Viajes Reina SL",
-                "responsibilities": {
-                    "01": "Creation of reusable components: I developed reusable Vue.js components to speed up development and maintain consistency in the interface.",
-                    "02": "Improvement of the shopping experience and mobile responsiveness: I identified and resolved errors in the purchasing process, ensuring a smooth experience for users. Additionally, I worked on optimizing the user interface for mobile devices, ensuring that the web application is functional and appealing on screens of different sizes."
-                },
-                "date": "September 2023 - Present"
-            },
-            "cysval": {
-                "title": "Front-end Developer",
-                "subtitle": "CYSVAL SL",
-                "responsibilities": {
-                    "01": "Maintenance and content updates: I performed maintenance and updates on existing websites, ensuring that the content was up to date and aligned with the business goals.",
-                    "02": "Translation to English for the web: I was responsible for implementing English translation of the user interface for the web application, expanding its reach to an international audience and improving usability for English-speaking users.",
-                    "03": "Implementation of features in the product manager: I collaborated on implementing enhancements and features in the product manager, improving efficiency and the user experience.",
-                    "04": "Maintenance and update of API endpoints: I participated in the regular maintenance of API endpoints, ensuring that the Vue.js application could access up-to-date data and function smoothly."
-                },
-                "date": "April 2022 - September 2023"
-            }
+        "id": "work",
+        "title": "Work"
+
+    },
+    "contact": {
+        "id": "contact",
+        "title": "Contact"
+    }
+  },
+  "hero": {
+    "title": "Hi, I'm ",
+    "subtitle1": "Enthusiastic Frontend Developer specializing in",
+    "subtitle2": "Vue.js and React"
+  },
+  "about": {
+    "subtitle": "INTRODUCTION",
+    "title": "About Me",
+    "description": "Throughout my career, I've worked at companies to create effective software solutions. My experience with TypeScript, JavaScript, React, and Vue.js has been a key part of my success. This portfolio provides a comprehensive view of my professional work and personal projects, demonstrating my ability to find new job opportunities."
+  },
+  "work": {
+    "subtitle": "WHAT I HAVE DONE SO FAR",
+    "title": "Work Experience",
+    "works": {
+      "viajesreina": {
+        "title": "Front-end Developer",
+        "responsibilities": {
+          "01": "Creation of reusable components: I developed reusable Vue.js components to speed up development and maintain consistency in the interface.",
+          "02": "Improvement of the shopping experience and mobile responsiveness: I identified and resolved errors in the purchasing process, ensuring a smooth experience for users. Additionally, I worked on optimizing the user interface for mobile devices, ensuring that the web application is functional and appealing on screens of different sizes."
         },
-        "projects": {
-            "subtitle": "MY WORK",
-            "title": "Projects",
-            "description": "In my portfolio, you will find a selection of projects that showcase my ability to turn concepts into tangible solutions. Each project is presented with links to code repositories and live demonstrations, offering a detailed view of my work in action.",
-            "projects": {
-                "01": {
-                    "title": "Safe Capital",
-                    "description": "This project is a web portal that provides detailed information about investment funds. Users can explore historical performance data, compare funds, and use filtering tools.",
-                    "technologies": {
-                        "01": "next.js",
-                        "02": "mongodb",
-                        "03": "tailwind"
-                    },
-                    "links": {
-                        "01": {
-                            "title": "Repository",
-                            "url": "https://github.com/marcoscorrales/safecapital-nextjs"
-                        }
-                    }
-                },
-                "02": {
-                    "title": "Music Festival",
-                    "description": "This project is a website that presents schedules and details of a music festival, allowing attendees to easily access essential information for their event experience.",
-                    "technologies": {
-                        "01": "html",
-                        "02": "gulp",
-                        "03": "scss"
-                    },
-                    "links": {
-                        "01": {
-                            "title": "Repository",
-                            "url": "https://github.com/marcoscorrales/festivalMusica"
-                        }
-                    }
-                },
-                "03": {
-                    "title": "Personal Website",
-                    "description": "This project is a web development blog that offers a variety of articles for web development enthusiasts. Visitors can explore content on trends to improve their web programming skills.",
-                    "technologies": {
-                        "01": "next.js",
-                        "02": "graphql",
-                        "03": "tailwind"
-                    },
-                    "links": {
-                        "01": {
-                            "title": "Repository",
-                            "url": "https://github.com/marcoscorrales/main-blog-nextjs"
-                        }
-                    }
-                }
-            }
+        "date": "September 2023 - Present"
+      },
+      "cysval": {
+        "title": "Front-end Developer",
+        "responsibilities": {
+          "01": "Maintenance and content updates: I performed maintenance and updates on existing websites, ensuring that the content was up to date and aligned with the business goals.",
+          "02": "Translation to English for the web: I was responsible for implementing English translation of the user interface for the web application, expanding its reach to an international audience and improving usability for English-speaking users.",
+          "03": "Implementation of features in the product manager: I collaborated on implementing enhancements and features in the product manager, improving efficiency and the user experience.",
+          "04": "Maintenance and update of API endpoints: I participated in the regular maintenance of API endpoints, ensuring that the Vue.js application could access up-to-date data and function smoothly."
         },
-        "contact": {
-			"subtitle": "GET IN TOUCH",
-			"title": "Contact",
-			"form": {
-				"name": {
-					"title": "Your name",
-					"placeholder": "Your name"
-				},
-				"email": {
-					"title": "Your email",
-					"placeholder": "Your email"
-				},
-				"message": {
-					"title": "Your message",
-					"placeholder": "What do you want to say?"
-				},
-				"submit": {
-					"title": "Send",
-					"sending": "Sending..."
-				}
-			},
-			"success": "Thank you for your message! I will get in touch with you as soon as possible.",
-			"error": "Something went wrong."
-		}
-	}
+        "date": "April 2022 - September 2023"
+      }
+    },
+    "projects": {
+      "subtitle": "MY WORK",
+      "title": "Projects",
+      "description": "In my portfolio, you will find a selection of projects that showcase my ability to turn concepts into tangible solutions. Each project is presented with links to code repositories and live demonstrations, offering a detailed view of my work in action.",
+      "items": {
+        "01": {
+          "title": "Safe Capital",
+          "description": "This project is a web portal that provides detailed information about investment funds. Users can explore historical performance data, compare funds, and use filtering tools.",
+          "technologies": {
+            "01": "next.js",
+            "02": "mongodb",
+            "03": "tailwind"
+          },
+          "links": {
+            "01": {
+              "title": "Repository",
+              "url": "https://github.com/marcoscorrales/safecapital-nextjs"
+            }
+          }
+        },
+        "02": {
+          "title": "Music Festival",
+          "description": "This project is a website that presents schedules and details of a music festival, allowing attendees to easily access essential information for their event experience.",
+          "technologies": {
+            "01": "html",
+            "02": "gulp",
+            "03": "scss"
+          },
+          "links": {
+            "01": {
+              "title": "Repository",
+              "url": "https://github.com/marcoscorrales/festivalMusica"
+            }
+          }
+        },
+        "03": {
+          "title": "Personal Website",
+          "description": "This project is a web development blog that offers a variety of articles for web development enthusiasts. Visitors can explore content on trends to improve their web programming skills.",
+          "technologies": {
+            "01": "next.js",
+            "02": "graphql",
+            "03": "tailwind"
+          },
+          "links": {
+            "01": {
+              "title": "Repository",
+              "url": "https://github.com/marcoscorrales/main-blog-nextjs"
+            }
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "subtitle": "GET IN TOUCH",
+    "title": "Contact",
+    "form": {
+      "name": {
+        "title": "Your name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "title": "Your email",
+        "placeholder": "Your email"
+      },
+      "message": {
+        "title": "Your message",
+        "placeholder": "What do you want to say?"
+      },
+      "submit": {
+        "title": "Send",
+        "sending": "Sending..."
+      }
+    },
+    "success": "Thank you for your message! I will get in touch with you as soon as possible.",
+    "error": "Something went wrong."
+  }
 }

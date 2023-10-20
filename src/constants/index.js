@@ -114,27 +114,25 @@ import {
   
   const experiences = [
     {
-      title: "Desarrollador de front-end",
+      name: "viajesreina",
       company_name: "Viajes Reina SL",
       icon: viajesreina,
       iconBg: "#383E56",
-      date: "Septiembre 2023 - Actualidad",
       points: [
-        "Creación de componentes reutilizables: Desarrollé componentes Vue.js reutilizables para acelerar el desarrollo y mantener la coherencia en la interfaz.",
-        "Mejora de la experiencia de compra y la adaptación a dispositivos móviles: Identifiqué y solucioné errores en el proceso de compra, garantizando una experiencia sin problemas para los usuarios. Además, trabajé en la optimización de la interfaz de usuario para dispositivos móviles, asegurando que la aplicación web sea funcional y atractiva en pantallas de diferentes tamaños.",
+        "01",
+        "02",
       ],
     },
     {
-      title: "Desarrollador de front-end",
-      company_name: "CYSVAL SL",
+      name: "cysval",
+      company_name: "Cysval SL",
       icon: cysval,
       iconBg: "#383E56",
-      date: "Abril 2022 - Septiembre 2023",
       points: [
-        "Mantenimiento y actualización de contenido: Realicé el mantenimiento y la actualización de sitios web existentes, garantizando que el contenido estuviera actualizado y alineado con los objetivos del negocio",
-        "Traducción a inglés de la web: Encargado de la implementación de la traducción al inglés de la interfaz de usuario de la aplicación web, lo que permitió expandir el alcance a un público internacional y mejorar la usabilidad para usuarios de habla inglesa.",
-        "Implementación de funcionalidades en gestor de productos: Colaboré en la implementación de mejoras  y funcionalidades en el gestor de productos, mejorando la eficiencia y la experiencia del usuario.",
-        "Mantenimiento y actualización de endpoints API: Participé en el mantenimiento regular de los endpoints de la API, asegurando que la aplicación Vue.js pudiera acceder a datos actualizados y funcionar sin problemas.",
+        "01",
+        "02",
+        "03",
+        "04",
       ],
     },
   ];
@@ -142,8 +140,7 @@ import {
   const projects = [
     {
       name: "Safe Capital",
-      description:
-        "Este proyecto es un portal web que ofrece información detallada sobre fondos de inversión, los usuarios pueden explorar datos de rendimiento histórico, comparar fondos y utilizar herramientas de filtrado.",
+      id: "01",
       tags: [
         {
           name: "nextjs",
@@ -163,8 +160,7 @@ import {
     },
     {
       name: "Festival Música",
-      description:
-        "Este proyecto es un sitio web que presenta los horarios y detalles de un festival de música, permitiendo a los asistentes acceder fácilmente a la información esencial para su experiencia en el evento.",
+      id: "02",
       tags: [
         {
           name: "html",
@@ -184,8 +180,7 @@ import {
     },
     {
       name: "Blog web",
-      description:
-        "Este proyecto es un blog de desarrollo web que ofrece una variedad de artículos para entusiastas del desarrollo. Los visitantes pueden explorar contenido sobre tendencias para mejorar en la programación web.",
+      id: "03",
       tags: [
         {
           name: "nextjs",

@@ -7,7 +7,7 @@ import { logo, menu, close } from "../assets";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const [t, i18n] = useTranslation('global');
+  const [t, i18n] = useTranslation("global");
   const activeLang = i18n.language;
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -40,29 +40,32 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => setActive(link.id)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{t(`header.${link.id}.title`)}</a>
             </li>
           ))}
-          <li
-            className={`${
-              activeLang === "es" ? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={() => i18n.changeLanguage("es")}
-          >
-            ES
-          </li>
-          <li
-            className={`${
-              activeLang === "en"? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={() => i18n.changeLanguage("en")}
-          >
-            EN
-          </li>
+          <div className="flex items-center content-center gap-2">
+            <li
+              className={`${
+                activeLang === "es" ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => i18n.changeLanguage("es")}
+            >
+              ES
+            </li>
+            <span>/</span>
+            <li
+              className={`${
+                activeLang === "en" ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => i18n.changeLanguage("en")}
+            >
+              EN
+            </li>
+          </div>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -83,16 +86,32 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
+                    active === link.id ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-16px`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
+                    setActive(link.id);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>{t(`header.${link.id}.title`)}</a>
                 </li>
               ))}
+              <li
+                className={`${
+                  activeLang === "es" ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => i18n.changeLanguage("es")}
+              >
+                ES
+              </li>
+              <li
+                className={`${
+                  activeLang === "en" ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => i18n.changeLanguage("en")}
+              >
+                EN
+              </li>
             </ul>
           </div>
         </div>

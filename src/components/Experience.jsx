@@ -12,11 +12,11 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { useTranslation } from "react-i18next";
 
-const ExperienceCard = ({ experience }) => (
+const ExperienceCard = ({ experience, t }) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-    date={experience.date}
+    date={t(`work.works.${experience.name}.date`)}
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div>
@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+      <h3 className="text-white text-[24px] font-bold">{t(`work.works.${experience.name}.title`)}</h3>
       <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>{experience.company_name}</p>
     </div>
 
@@ -39,7 +39,7 @@ const ExperienceCard = ({ experience }) => (
           key={`experience-point-${index}`}
           className="text-white-100 text-[14px] pl-1 tracking-wide"
         >
-          {point}
+          {t(`work.works.${experience.name}.responsibilities.${point}`)}
         </li>
       ))}
     </ul>
@@ -47,7 +47,7 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
-  const [t, i18n] = useTranslation('global');
+  const [t] = useTranslation('global');
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -58,7 +58,7 @@ const Experience = () => {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+            <ExperienceCard key={index} experience={experience} t={t} />
           ))}
         </VerticalTimeline>
       </div>
